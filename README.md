@@ -351,4 +351,10 @@ action:
 mode: single
 ```
 </details>
+    
     8-6. Tasmota Integration 추가
+    
+    8-7. smartir custom_components 추가
+    
+https://github.com/smartHomeHub/SmartIR
+
