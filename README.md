@@ -4,26 +4,29 @@ Armbian Based TabSpace Customized OS
 
 # Prework Code
 
-1. 업데이트 패키지의 빠른 다운로드를 위해 Kakao Apt Repository 추가
+1. Armbian 21.02.3 for OrangePi Zero 설치
 
-<pre>
-sudo vi /etc/apt/sources.list
-</pre>
-adding
-<pre>
-deb http://mirror.kakao.com/debian buster main contrib non-free
-#deb http://deb.debian.org/debian buster main contrib non-free
-#deb-src http://deb.debian.org/debian buster main contrib non-free
+- https://www.armbian.com/orange-pi-zero/
 
-deb http://mirror.kakao.com/debian buster-updates main contrib non-free
-#deb http://deb.debian.org/debian buster-updates main contrib non-free
-#deb-src http://deb.debian.org/debian buster-updates main contrib non-free
+- https://redirect.armbian.com/orangepizero/Buster_current
 
-deb http://mirror.kakao.com/debian buster-backports main contrib non-free
-#deb http://deb.debian.org/debian buster-backports main contrib non-free
-#deb-src http://deb.debian.org/debian buster-backports main contrib non-free
 
-deb http://mirror.kakao.com/debian buster/updates main contrib non-free
-#deb http://security.debian.org/ buster/updates main contrib non-free
-#deb-src http://security.debian.org/ buster/updates main contrib non-free
-</pre>
+2. OLED Support
+
+
+3. HOSTNAME Autochange
+
+
+4. TimeZone Change
+
+- Asia/Seoul
+
+
+5. Docker CE Install
+
+
+6. HomeAssistant Supervisor Install
+
+7. HomeAssistant Add-On Zigbee2MQTT Install
+
+8. Change Zigbee2MQTT Channel to 25
