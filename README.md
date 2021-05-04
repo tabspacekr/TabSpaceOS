@@ -43,15 +43,21 @@ Armbian Based TabSpace Customized OS
 
 7. HomeAssistant Add-On Install 
 
-7-1. Zigbee2MQTT
+7-1. File Editor (5.3.0)
+    
+    7-1-1. Enable WatchDog
+    
+    7-1-2. Enable Show Sidebar
 
-    7-1-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
+7-2. Zigbee2MQTT
+
+    7-2-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
     
-    7-1-2. Change Zigbee Channel to 25 on Z2M Configuration
+    7-2-2. Change Zigbee Channel to 25 on Z2M Configuration
     
-    7-1-3. Enable WatchDog
+    7-2-3. Enable WatchDog
     
-    7-1-4. Enable Show Sidebar
+    7-2-4. Enable Show Sidebar
 
 7-3. MariaDB (2.3.0)
 
