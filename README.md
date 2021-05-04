@@ -57,6 +57,17 @@ Armbian Based TabSpace Customized OS
 
     7-3-1. Setting Password is 'tabspace'
     
+<pre>
+databases:
+  - homeassistant
+logins:
+  - username: homeassistant
+    password: tabspace
+rights:
+  - username: homeassistant
+    database: homeassistant
+</pre>
+    
     7-3-2. Edit Configuration to use HA Recorder setting.
 
 7-4. Mosquitto broker (5.1.1)
