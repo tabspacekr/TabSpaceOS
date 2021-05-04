@@ -48,15 +48,30 @@ Armbian Based TabSpace Customized OS
     7-1-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
     
     7-1-2. Change Zigbee Channel to 25 on Z2M Configuration
+    
+    7-1-3. Enable WatchDog
+    
+    7-1-4. Enable Show Sidebar
 
 7-3. MariaDB
 
     7-3-1. Setting Password is 'tabspace'
     
     7-3-2. Edit Configuration to use HA Recorder setting.
+
+7-4. Mosquitto broker (5.1.1)
+
+    7-4-1. Install Mosquitto Broker
     
+    7-4-2. Add login credential on HomeAssistant User
+    
+    ID : mqtt
+    PW : tabspace
+
 8. HomeAssistant Configuration Setting
 
   8-1. Include Dummy files
   
   8-2. Exclude something laggy settings
+  
+
