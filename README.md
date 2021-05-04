@@ -89,6 +89,14 @@ rights:
 </pre>
     
     7-3-2. Edit Configuration to use HA Recorder setting.
+    
+<pre>
+# on configuration.yaml
+
+# Use MariaDB for Recording
+recorder:
+  db_url: mysql://homeassistant:tabspace@core-mariadb/homeassistant?charset=utf8mb4
+</pre>
 
 7-4. Mosquitto broker (5.1.1)
 
