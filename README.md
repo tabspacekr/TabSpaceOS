@@ -53,7 +53,7 @@ Armbian Based TabSpace Customized OS
     
     7-1-4. Enable Show Sidebar
 
-7-3. MariaDB
+7-3. MariaDB (2.3.0)
 
     7-3-1. Setting Password is 'tabspace'
     
