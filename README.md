@@ -45,7 +45,7 @@ Armbian Based TabSpace Customized OS
 
 7-1. Zigbee2MQTT
 
-    7-1-1. Add Repository
+    7-1-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
     
     7-1-2. Change Zigbee Channel to 25 on Z2M Configuration
 
