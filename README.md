@@ -357,4 +357,24 @@ mode: single
     8-7. smartir custom_components 추가
     
 https://github.com/smartHomeHub/SmartIR
-
+```
+   # on ssh
+   43  cd  /usr/share/hassio/homeassistant/
+   52  mkdir custom_components
+   53  cd custom_components/
+   55  git clone https://github.com/smartHomeHub/SmartIR
+   57  cd SmartIR/
+   59  cd custom_components/
+   61  mv smartir/ ../../../
+   62  cd ../../../
+   64  cd custom_components/
+   66  rm -rf SmartIR/
+   69  mv smartir/ ./custom_components/
+   70  cd custom_components/
+   72  cd smartir/
+   73  ls
+   # edit configuration.yaml
+   # adding smartir custom components
+   # IR리모콘 사용을 손쉽게 할 수 있는 smartir 커스텀 컴포넌트 호출 ( https://github.com/smartHomeHub/SmartIR )  
+smartir:
+```
