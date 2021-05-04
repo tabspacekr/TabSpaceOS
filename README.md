@@ -333,3 +333,21 @@ mode: parallel
 max: 10
 ```
 </details>
+    8-5. 시스템 시작 시 Google Dark Theme by TabSpace 자동 적용
+<details><summary>theme_apply_on_startup.yaml</summary>
+<p>
+   
+```
+alias: (TabSpace) 시스템 시작 시 테마 자동적용
+description: '시스템 시작 시에, Google Dark by TabSpace 테마를 자동으로 적용합니다.'
+trigger:
+  - platform: homeassistant
+    event: start
+condition: []
+action:
+  - service: frontend.set_theme
+    data:
+      name: Google Dark Theme
+mode: single
+```
+</details>
