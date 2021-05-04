@@ -48,6 +48,20 @@ Armbian Based TabSpace Customized OS
     7-1-1. Enable WatchDog
     
     7-1-2. Enable Show Sidebar
+    
+    7-1-3. Edit Configuration to Directory First shown
+    
+<pre>
+dirsfirst: true
+enforce_basepath: true
+git: true
+ignore_pattern:
+  - __pycache__
+  - .cloud
+  - .storage
+  - deps
+ssh_keys: []
+</pre>
 
 7-2. Zigbee2MQTT
 
