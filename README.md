@@ -304,3 +304,32 @@ Google Blue Theme:
   # Pre/Code
   markdown-code-background-color: rgb(23, 23, 23)
 ```
+</details>
+    8-4. 비밀번호 취약 알림 해제 자동화 추가
+    
+<details><summary>remove_pwned-passwords-notice.yaml</summary>
+<p>
+   
+```
+alias: (TabSpace) 비밀번호 취약 알림 해제
+description: Insecure secrets in ADD-ON_NAME의 알림을 자동으로 해제
+trigger:
+  - platform: event
+    event_type: call_service
+    event_data:
+      domain: persistent_notification
+      service: create
+condition:
+  - condition: template
+    value_template: >
+      {{ 'supervisor_issue_pwned' in
+      trigger.event.data.service_data.notification_id }}
+action:
+  - service: persistent_notification.dismiss
+    data:
+      notification_id: |
+        {{ trigger.event.data.service_data.notification_id }}
+mode: parallel
+max: 10
+```
+</details>
