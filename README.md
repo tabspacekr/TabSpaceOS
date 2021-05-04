@@ -351,3 +351,4 @@ action:
 mode: single
 ```
 </details>
+    8-6. Tasmota Integration 
