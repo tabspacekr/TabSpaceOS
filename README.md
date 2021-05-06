@@ -34,7 +34,7 @@ Armbian Based TabSpace Customized OS
 5. Docker CE Install
 
 
-6. HomeAssistant Supervisor Install
+6. HomeAssistant Install (Core 2021.05.0, Supervisor-2021.04.3)
 
    HomeAssistant Login Information
    
@@ -106,6 +106,10 @@ recorder:
     
     ID : mqtt
     PW : tabspace
+
+7-5. ZeroTier One  (0.11.0)
+
+    ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 향후 TabSpace B2C망을 통한 서비스시에 사용됩니다.
 
 8. HomeAssistant Configuration Setting
 
