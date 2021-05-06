@@ -31,7 +31,7 @@ Armbian Based TabSpace Customized OS
    Asia/Seoul
 
 
-5. Docker CE Install
+5. Docker CE Install (20.10.6)
 
 
 6. HomeAssistant Install (Core 2021.05.0, Supervisor-2021.04.3)
