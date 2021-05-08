@@ -45,11 +45,11 @@ Armbian Based TabSpace Customized OS
 
 7-1. File Editor (5.3.0)
     
-    7-1-1. Enable WatchDog
+ 7-1-1. Enable WatchDog
     
-    7-1-2. Enable Show Sidebar
+ 7-1-2. Enable Show Sidebar
     
-    7-1-3. Edit Configuration to Directory First shown
+ 7-1-3. Edit Configuration to Directory First shown
     
 <pre>
 dirsfirst: true
@@ -65,17 +65,17 @@ ssh_keys: []
 
 7-2. Zigbee2MQTT
 
-    7-2-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
+ 7-2-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
     
-    7-2-2. Change Zigbee Channel to 25 on Z2M Configuration
+ 7-2-2. Change Zigbee Channel to 25 on Z2M Configuration
     
-    7-2-3. Enable WatchDog
+ 7-2-3. Enable WatchDog
     
-    7-2-4. Enable Show Sidebar
+ 7-2-4. Enable Show Sidebar
 
 7-3. MariaDB (2.3.0)
 
-    7-3-1. Setting Password is 'tabspace'
+ 7-3-1. Setting Password is 'tabspace'
     
 <pre>
 databases:
@@ -88,7 +88,7 @@ rights:
     database: homeassistant
 </pre>
     
-    7-3-2. Edit Configuration to use HA Recorder setting.
+ 7-3-2. Edit Configuration to use HA Recorder setting.
     
 <pre>
 # on configuration.yaml
@@ -100,9 +100,9 @@ recorder:
 
 7-4. Mosquitto broker (5.1.1)
 
-    7-4-1. Install Mosquitto Broker
+ 7-4-1. Install Mosquitto Broker
     
-    7-4-2. Add login credential on HomeAssistant User
+ 7-4-2. Add login credential on HomeAssistant User
     
     ID : mqtt
     PW : tabspace
@@ -113,11 +113,11 @@ recorder:
 
 8. HomeAssistant Configuration Setting
 
-  8-1. Include Dummy files
+ 8-1. Include Dummy files
   
-  8-2. Exclude something laggy settings
+ 8-2. Exclude something laggy settings
   
-  8-3. Add theme (Google Dark theme by TabSpace)
+ 8-3. Add theme (Google Dark theme by TabSpace)
 <pre>
 # add configuration.yaml
 # 테마 적용
@@ -309,7 +309,7 @@ Google Blue Theme:
   markdown-code-background-color: rgb(23, 23, 23)
 ```
 </details>
-    8-4. 비밀번호 취약 알림 해제 자동화 추가
+ 8-4. 비밀번호 취약 알림 해제 자동화 추가
     
 <details><summary>remove_pwned-passwords-notice.yaml</summary>
 <p>
@@ -337,7 +337,7 @@ mode: parallel
 max: 10
 ```
 </details>
-    8-5. 시스템 시작 시 Google Dark Theme by TabSpace 자동 적용
+ 8-5. 시스템 시작 시 Google Dark Theme by TabSpace 자동 적용
 <details><summary>theme_apply_on_startup.yaml</summary>
 <p>
    
@@ -356,9 +356,9 @@ mode: single
 ```
 </details>
     
-    8-6. Tasmota Integration 추가
-    
-    8-7. smartir custom_components 추가
+ 8-6. Tasmota Integration 추가
+    SONOFF WIFI 스위치의 활용을 손쉽게 하기 위한 Tasmota Integration Pre Install
+ 8-7. smartir custom_components 추가
     
 https://github.com/smartHomeHub/SmartIR
 ```
