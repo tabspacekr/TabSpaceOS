@@ -22,7 +22,6 @@ Armbian Based TabSpace Customized OS
    Add Cron Job on Reboot
 
 3. HOSTNAME Autochange
-
    
    Add Cron Job on Reboot
    
@@ -33,6 +32,7 @@ Armbian Based TabSpace Customized OS
 
 5. Docker CE Install (20.10.6)
 
+   Use 'armbian-config'
 
 6. HomeAssistant Install (Core 2021.05.0, Supervisor-2021.04.3)
 
