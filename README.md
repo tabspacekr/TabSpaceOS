@@ -35,22 +35,25 @@ Armbian Based TabSpace Customized OS
    Use 'armbian-config'
 
 6. HomeAssistant Install (Core 2021.05.0, Supervisor-2021.04.3)
-
+<pre>
    HomeAssistant Login Information
    
    ID : admin
    PW : tabspace
+</pre>
+
+6-1. Enable update check Binary Sensor : binary_sensor.home_assistant_operating_system_update_available
 
 7. HomeAssistant Add-On Install 
 
 7-1. File Editor (5.3.0)
     
- 7-1-1. Enable WatchDog
+7-1-1. Enable WatchDog
     
- 7-1-2. Enable Show Sidebar
+7-1-2. Enable Show Sidebar
     
- 7-1-3. Edit Configuration to Directory First shown
-    
+7-1-3. Edit Configuration to Directory First shown
+
 <pre>
 dirsfirst: true
 enforce_basepath: true
@@ -63,19 +66,23 @@ ignore_pattern:
 ssh_keys: []
 </pre>
 
+7-1-4. Enable update check Binary Sensor : binary_sensor.file_editor_update_available
+
 7-2. Zigbee2MQTT
 
- 7-2-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
+7-2-1. Add Repository ( https://github.com/danielwelch/hassio-zigbee2mqtt ) and Install
     
- 7-2-2. Change Zigbee Channel to 25 on Z2M Configuration
+7-2-2. Change Zigbee Channel to 25 on Z2M Configuration
     
- 7-2-3. Enable WatchDog
+7-2-3. Enable WatchDog
     
- 7-2-4. Enable Show Sidebar
+7-2-4. Enable Show Sidebar
+ 
+7-2-5. Enable update check Binary Sensor : binary_sensor.zigbee2mqtt_update_available
 
 7-3. MariaDB (2.3.0)
 
- 7-3-1. Setting Password is 'tabspace'
+7-3-1. Setting Password is 'tabspace'
     
 <pre>
 databases:
@@ -88,7 +95,9 @@ rights:
     database: homeassistant
 </pre>
     
- 7-3-2. Edit Configuration to use HA Recorder setting.
+7-3-2. Edit Configuration to use HA Recorder setting.
+ 
+7-3-3. Enable update check Binary Sensor : 
     
 <pre>
 # on configuration.yaml
@@ -100,16 +109,24 @@ recorder:
 
 7-4. Mosquitto broker (5.1.1)
 
- 7-4-1. Install Mosquitto Broker
+7-4-1. Install Mosquitto Broker
     
- 7-4-2. Add login credential on HomeAssistant User
-    
-    ID : mqtt
-    PW : tabspace
+7-4-2. Add login credential on HomeAssistant User
+
+7-4-3. Enable update check Binary Sensor : binary_sensor.mariadb_update_available
+
+<pre>
+ID : mqtt
+PW : tabspace
+</pre>
 
 7-5. ZeroTier One  (0.11.0)
 
-    ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 향후 TabSpace B2C망을 통한 서비스시에 사용됩니다.
+<pre>
+ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 향후 TabSpace B2C망을 통한 서비스시에 사용됩니다.
+</pre>
+
+7-5-1. Enable update check Binary Sensor : binary_sensor.zerotier_one_update_available
 
 8. HomeAssistant Configuration Setting
 
