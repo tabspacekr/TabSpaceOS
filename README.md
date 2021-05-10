@@ -6,6 +6,7 @@ Armbian Based TabSpace Customized OS
 
 1. Armbian 21.02.3 for OrangePi Zero 설치
 
+<pre>
    https://www.armbian.com/orange-pi-zero/
 
    https://redirect.armbian.com/orangepizero/Buster_current
@@ -14,35 +15,44 @@ Armbian Based TabSpace Customized OS
    
    ID : root
    PW : tabspace
-   
+</pre>
+
 2. OLED Support
 
+<pre>
    SDD1306 Package Install
    
    Add Cron Job on Reboot
+</pre>
 
 3. HOSTNAME Autochange
-   
+
+<pre>
    Add Cron Job on Reboot
-   
+</pre>   
+
 4. TimeZone Change
 
+<pre>
    Asia/Seoul
-
+</pre>
 
 5. Docker CE Install (20.10.6)
 
-   Use 'armbian-config'
+<pre>
+Use 'armbian-config'
+</pre>
 
 6. HomeAssistant Install (Core 2021.05.0, Supervisor-2021.04.3)
 <pre>
-   HomeAssistant Login Information
+6-1. HomeAssistant Login Information
    
    ID : admin
    PW : tabspace
-</pre>
 
-6-1. Enable update check Binary Sensor : binary_sensor.home_assistant_operating_system_update_available
+6-2. Enable update check Binary Sensor : binary_sensor.home_assistant_operating_system_update_available
+
+</pre>
 
 7. HomeAssistant Add-On Install 
 
