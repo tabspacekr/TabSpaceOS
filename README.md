@@ -1,6 +1,15 @@
 # TabSpaceOS
-Armbian Based TabSpace Customized OS
+TabSpaceOS is Armbian Based Customized OS
 
+Debian Linux기반인 Armbian을 OrangePi Zero에서 홈오토메이션을 손쉽게 활용할 수 있는 
+
+오픈소스 IoT 플랫폼 HomeAssistant 및 각종 애드온을 탭스페이스의 노하우로 맞춤 커스터마이징 한 운영체제(OS)입니다.
+
+# Download
+See Release page : https://github.com/tabspacekr/TabSpaceOS/releases
+
+# Use
+Download zipped binary file, extract, write microsd card, and joy.
 
 # Prework Code
 
