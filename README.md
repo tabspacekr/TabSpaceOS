@@ -52,19 +52,13 @@ Download zipped binary file, extract, write microsd card, and joy.
 Use 'armbian-config'
 </pre>
 
-## 6. HomeAssistant Install (Core 2021.05.0, Supervisor-2021.04.3)
+## 6. HomeAssistant Install (Core 2021.05.3, Supervisor-2021.04.3)
 
 ### 6-1. HomeAssistant Login Information
 <pre>   
    ID : admin
    PW : tabspace
 </pre>
-### 6-2. Enable update check Binary Sensor
-<pre>
-: binary_sensor.home_assistant_operating_system_update_available
-</pre>
-
-
 
 ## 7. HomeAssistant Add-On Install 
 
@@ -88,9 +82,6 @@ ignore_pattern:
 ssh_keys: []
 </pre>
 
-#### 7-1-4. Enable update check Binary Sensor : binary_sensor.file_editor_update_available
-
-
 ### 7-2. Zigbee2MQTT
 
 
@@ -102,9 +93,6 @@ ssh_keys: []
     
 #### 7-2-4. Enable Show Sidebar
  
-#### 7-2-5. Enable update check Binary Sensor : binary_sensor.zigbee2mqtt_update_available
-
-
 ### 7-3. MariaDB (2.3.0)
 
 #### 7-3-1. Setting Password is 'tabspace'
@@ -122,8 +110,6 @@ rights:
     
 #### 7-3-2. Edit Configuration to use HA Recorder setting.
  
-#### 7-3-3. Enable update check Binary Sensor : 
-    
 <pre>
 # on configuration.yaml
 
@@ -138,7 +124,6 @@ recorder:
     
 #### 7-4-2. Add login credential on HomeAssistant User
 
-#### 7-4-3. Enable update check Binary Sensor : binary_sensor.mariadb_update_available
 <pre>
 ID : mqtt
 PW : tabspace
@@ -148,8 +133,6 @@ PW : tabspace
 <pre>
 참고 : ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 향후 TabSpace B2C망을 통한 서비스시에 사용됩니다.
 </pre>
-
-#### 7-5-1. Enable update check Binary Sensor : binary_sensor.zerotier_one_update_available
 
 ## 8. HomeAssistant Configuration Setting
 
