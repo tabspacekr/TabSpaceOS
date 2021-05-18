@@ -16,34 +16,34 @@ Download zipped binary file, extract, write microsd card, and joy.
 ## 1. Armbian 21.05.1 Buster for OrangePi Zero 설치
 
 <pre>
-   https://www.armbian.com/orange-pi-zero/
+https://www.armbian.com/orange-pi-zero/
 
-   https://redirect.armbian.com/orangepizero/Buster_current
+https://redirect.armbian.com/orangepizero/Buster_current
 
-   Armbian Login Information
-   
-   ID : root
-   PW : tabspace
+Armbian Login Information
+- ID : root
+- PW : tabspace
 </pre>
 
 ## 2. OLED Support
 
 <pre>
-   SDD1306 Package Install
-   
-   Add Cron Job on Reboot
+SDD1306 Package Install
+Script Location : /root/ogpi.py
+Add Cron Job on Reboot
 </pre>
 
 ## 3. HOSTNAME Autochange
 
 <pre>
-   Add Cron Job on Reboot
+Script Location : /root/hostname.sh
+Add Cron Job on Reboot
 </pre>   
 
 ## 4. TimeZone Change
 
 <pre>
-   Asia/Seoul
+Asia/Seoul
 </pre>
 
 ## 5. Docker CE Install (20.10.6)
@@ -56,8 +56,8 @@ Use 'armbian-config'
 
 ### 6-1. HomeAssistant Login Information
 <pre>   
-   ID : admin
-   PW : tabspace
+ID : admin
+PW : tabspace
 </pre>
 
 ## 7. HomeAssistant Add-On Install 
@@ -131,7 +131,9 @@ PW : tabspace
 
 ### 7-5. ZeroTier One  (0.11.0)
 <pre>
-참고 : ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 향후 TabSpace B2C망을 통한 서비스시에 사용됩니다.
+[참고]
+ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 
+향후 TabSpace B2C망을 통한 서비스시에 사용됩니다.
 </pre>
 
 ## 8. HomeAssistant Configuration Setting
@@ -391,24 +393,26 @@ SONOFF WIFI 스위치의 활용을 손쉽게 하기 위한 Tasmota Integration P
 ### 8-7. smartir custom_components 추가
     
 https://github.com/smartHomeHub/SmartIR
+```bash
+# on ssh
+cd  /usr/share/hassio/homeassistant/
+mkdir custom_components
+cd custom_components/
+git clone https://github.com/smartHomeHub/SmartIR
+cd SmartIR/
+cd custom_components/
+mv smartir/ ../../../
+cd ../../../
+cd custom_components/
+rm -rf SmartIR/
+mv smartir/ ./custom_components/
+cd custom_components/
+cd smartir/
+ls
 ```
-   # on ssh
-   43  cd  /usr/share/hassio/homeassistant/
-   52  mkdir custom_components
-   53  cd custom_components/
-   55  git clone https://github.com/smartHomeHub/SmartIR
-   57  cd SmartIR/
-   59  cd custom_components/
-   61  mv smartir/ ../../../
-   62  cd ../../../
-   64  cd custom_components/
-   66  rm -rf SmartIR/
-   69  mv smartir/ ./custom_components/
-   70  cd custom_components/
-   72  cd smartir/
-   73  ls
-   # edit configuration.yaml
-   # adding smartir custom components
-   # IR리모콘 사용을 손쉽게 할 수 있는 smartir 커스텀 컴포넌트 호출 ( https://github.com/smartHomeHub/SmartIR )  
+```python
+# edit configuration.yaml
+# adding smartir custom components
+# IR리모콘 사용을 손쉽게 할 수 있는 smartir 커스텀 컴포넌트 호출 ( https://github.com/smartHomeHub/SmartIR )  
 smartir:
 ```
