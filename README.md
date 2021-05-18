@@ -13,7 +13,7 @@ Download zipped binary file, extract, write microsd card, and joy.
 
 # Prework Code
 
-## 1. Armbian 21.02.3 for OrangePi Zero 설치
+## 1. Armbian 21.05.1 Buster for OrangePi Zero 설치
 
 <pre>
    https://www.armbian.com/orange-pi-zero/
@@ -52,7 +52,7 @@ Download zipped binary file, extract, write microsd card, and joy.
 Use 'armbian-config'
 </pre>
 
-## 6. HomeAssistant Install (Core 2021.05.3, Supervisor-2021.04.3)
+## 6. HomeAssistant Install (Core 2021.05.4, Supervisor-2021.04.3)
 
 ### 6-1. HomeAssistant Login Information
 <pre>   
@@ -139,7 +139,10 @@ PW : tabspace
 ### 8-1. Include Dummy files
   
 ### 8-2. Exclude something laggy settings
-  
+<pre>
+Remove HA Update Check
+- binary_sensor.updater
+</pre>
 ### 8-3. Add theme (Google Dark theme by TabSpace)
 <pre>
 # add configuration.yaml
