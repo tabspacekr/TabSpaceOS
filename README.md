@@ -140,7 +140,7 @@ PW : tabspace
   
 ### 8-2. Exclude something laggy settings
 <pre>
-Remove HA Update Check
+Disable HA Update Check
 - binary_sensor.updater
 </pre>
 ### 8-3. Add theme (Google Dark theme by TabSpace)
