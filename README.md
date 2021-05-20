@@ -52,7 +52,7 @@ Asia/Seoul
 Use 'armbian-config'
 </pre>
 
-## 6. HomeAssistant Install (Core 2021.05.4, Supervisor-2021.04.3)
+## 6. HomeAssistant Install (Core 2021.05.5, Supervisor-2021.04.3)
 
 ### 6-1. HomeAssistant Login Information
 <pre>   
@@ -63,7 +63,7 @@ PW : tabspace
 ## 7. HomeAssistant Add-On Install 
 
 
-### 7-1. File Editor (5.3.0)
+### 7-1. File Editor (5.3.1)
 
 #### 7-1-1. Enable WatchDog
     
