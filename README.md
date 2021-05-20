@@ -118,12 +118,13 @@ recorder:
   db_url: mysql://homeassistant:tabspace@core-mariadb/homeassistant?charset=utf8mb4
 </pre>
 
-### 7-4. Mosquitto broker (5.1.1)
+### 7-4. Mosquitto broker (6.0.1)
 
 #### 7-4-1. Install Mosquitto Broker
     
 #### 7-4-2. Add login credential on HomeAssistant User
 
+참고: 6.0.0 이상 버전부터는, 익명 로그인 기능이 제거되어 반드시 로그인 정보를 기입해주어야 합니다.
 <pre>
 ID : mqtt
 PW : tabspace
