@@ -23,6 +23,11 @@ https://redirect.armbian.com/orangepizero/Buster_current
 Armbian Login Information
 - ID : root
 - PW : tabspace
+
+CPU Clock Modify
+- Set mode Performance
+- Set clock 1080
+
 </pre>
 
 ## 2. OLED Support
