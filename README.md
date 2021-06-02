@@ -17,17 +17,15 @@ Download zipped binary file, extract, write microsd card, and joy.
 
 <pre>
 https://www.armbian.com/orange-pi-zero/
-
 https://redirect.armbian.com/orangepizero/Buster_current
 
 Armbian Login Information
 - ID : root
 - PW : tabspace
 
-CPU Clock Modify
+CPU Clock Speed Modify
 - Set mode Performance
-- Set clock 1080
-
+- Set clock 1008MHz(1008000)
 </pre>
 
 ## 2. OLED Support
