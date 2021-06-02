@@ -13,7 +13,7 @@ Download zipped binary file, extract, write microsd card, and joy.
 
 # Prework Code
 
-## 1. Install Armbian 21.05.1 Buster with Linux 5.10.34-sunxi
+## 1. Install Armbian 21.05.2 Buster with Linux 5.10.34-sunxi
 
 <pre>
 https://www.armbian.com/orange-pi-zero/
