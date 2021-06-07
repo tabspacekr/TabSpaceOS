@@ -116,36 +116,11 @@ advanced:
     
 #### 7-2-4. Enable Show Sidebar
  
-### 7-3. MariaDB (2.3.0)
+### 7-3. Mosquitto broker (6.0.1)
 
-#### 7-3-1. Setting Password is 'tabspace'
+#### 7-3-1. Install Mosquitto Broker
     
-<pre>
-databases:
-  - homeassistant
-logins:
-  - username: homeassistant
-    password: tabspace
-rights:
-  - username: homeassistant
-    database: homeassistant
-</pre>
-    
-#### 7-3-2. Edit Configuration to use HA Recorder setting.
- 
-<pre>
-# on configuration.yaml
-
-# Use MariaDB for Recording
-recorder:
-  db_url: mysql://homeassistant:tabspace@core-mariadb/homeassistant?charset=utf8mb4
-</pre>
-
-### 7-4. Mosquitto broker (6.0.1)
-
-#### 7-4-1. Install Mosquitto Broker
-    
-#### 7-4-2. Add login credential on HomeAssistant User
+#### 7-3-2. Add login credential on HomeAssistant User
 
 참고: 6.0.0 이상 버전부터는, 익명 로그인 기능이 제거되어 반드시 로그인 정보를 기입해주어야 합니다.
 <pre>
@@ -153,7 +128,7 @@ ID : mqtt
 PW : tabspace
 </pre>
 
-### 7-5. ZeroTier One  (0.11.0)
+### 7-4. ZeroTier One  (0.11.0)
 <pre>
 [참고]
 ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 
@@ -169,6 +144,14 @@ ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위�
 Disable HA Update Check
 - binary_sensor.updater
 </pre>
+ 
+<pre>
+# Edit Configuration to use HA Recorder setting on configuration.yaml
+# 로그 저장 주기를 10일로 변경
+recorder:
+  purge_keep_days: 10
+</pre>
+
 ### 8-3. Add theme (Google Dark theme by TabSpace)
 <pre>
 # add configuration.yaml
