@@ -58,7 +58,7 @@ Use 'armbian-config'
 ## 6. HomeAssistant Install (Core 2021.06.2, Supervisor-2021.04.3)
 
 ### 6-1. HomeAssistant Login Information
-<pre>   
+<pre>
 ID : admin
 PW : tabspace
 </pre>
