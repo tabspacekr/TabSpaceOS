@@ -49,7 +49,7 @@ Add Cron Job on Reboot
 Asia/Seoul
 </pre>
 
-## 5. Docker CE Install (20.10.6)
+## 5. Docker CE Install (20.10.7)
 
 <pre>
 Use 'armbian-config'
