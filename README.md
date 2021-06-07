@@ -89,7 +89,9 @@ ssh_keys: []
 
 #### 7-2-1. Add Repository ( https://github.com/zigbee2mqtt/hassio-zigbee2mqtt ) and Install
 <pre>
-TabSpace OS v0.8-alpha(2021.06.07.)부터 기존 Z2M저장소인 https://github.com/danielwelch/hassio-zigbee2mqtt 를 변경된 저장소인 https://github.com/zigbee2mqtt/hassio-zigbee2mqtt 로 변경하였습니다.
+TabSpace OS v0.8-alpha(2021.06.07.)부터 
+ 기존 Z2M저장소인 https://github.com/danielwelch/hassio-zigbee2mqtt 를 
+  변경된 저장소인 https://github.com/zigbee2mqtt/hassio-zigbee2mqtt 로 변경하였습니다.
 </pre>
     
 #### 7-2-2. Change Zigbee Channel 25 and PAN ID on Z2M Configuration
