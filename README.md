@@ -55,7 +55,7 @@ Asia/Seoul
 Use 'armbian-config'
 </pre>
 
-## 6. HomeAssistant Install (Core 2021.05.5, Supervisor-2021.04.3)
+## 6. HomeAssistant Install (Core 2021.06.2, Supervisor-2021.04.3)
 
 ### 6-1. HomeAssistant Login Information
 <pre>   
