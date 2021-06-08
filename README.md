@@ -398,9 +398,9 @@ mode: single
 <pre>
 SONOFF WIFI 스위치의 활용을 손쉽게 하기 위한 Tasmota Integration Pre Install
 </pre>
-### 8-7. smartir custom_components 추가
+### 8-7. SmartIR Custom Components 추가
     
-https://github.com/smartHomeHub/SmartIR
+SmartIR Repository : https://github.com/smartHomeHub/SmartIR
 ```bash
 # on ssh
 cd  /usr/share/hassio/homeassistant/
