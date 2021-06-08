@@ -90,8 +90,8 @@ ssh_keys: []
 #### 7-2-1. Add Repository ( https://github.com/zigbee2mqtt/hassio-zigbee2mqtt ) and Install
 <pre>
 TabSpace OS v0.8-alpha(2021.06.07.)부터 
- 기존 Z2M저장소인 https://github.com/danielwelch/hassio-zigbee2mqtt 를 
-  변경된 저장소인 https://github.com/zigbee2mqtt/hassio-zigbee2mqtt 로 변경하였습니다.
+ 기존 Z2M 저장소인 https://github.com/danielwelch/hassio-zigbee2mqtt 를 
+  변경된 Z2M 저장소인 https://github.com/zigbee2mqtt/hassio-zigbee2mqtt 로 변경하였습니다.
 </pre>
     
 #### 7-2-2. Change Zigbee Channel 25 and PAN ID on Z2M Configuration
@@ -124,17 +124,16 @@ advanced:
     
 #### 7-3-2. Add login credential on HomeAssistant User
 
-참고: 6.0.0 이상 버전부터는, 익명 로그인 기능이 제거되어 반드시 로그인 정보를 기입해주어야 합니다.
 <pre>
+※ 참고 : 6.0.0 이상 버전부터는, 익명 로그인 기능이 제거되어 반드시 로그인 정보를 기입해주어야 합니다.
 ID : mqtt
 PW : tabspace
 </pre>
 
 ### 7-4. ZeroTier One  (0.11.0)
 <pre>
-[참고]
-ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 
-향후 TabSpace B2C망을 통한 서비스시에 사용됩니다.
+※ 참고 : ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 
+         ZeroTier는 최초 실행 시 개인 Node ID를 부여받습니다. 향후 TabSpace B2C망을 통한 서비스시에 사용 예정입니다.
 </pre>
 
 ## 8. HomeAssistant Configuration Setting
