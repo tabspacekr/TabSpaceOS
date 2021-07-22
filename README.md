@@ -154,6 +154,13 @@ recorder:
   purge_keep_days: 10
 </pre>
 
+<pre>
+# HA 2021.7 이후 업데이트 시에, 리버스프록시를 통한 접근 시 웹페이지가 동작하지 않는 상황에 대한 configuration.yaml 수정
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 10.100.0.0/16  # Add the IP address of the proxy server
+</pre>
 ### 8-3. Add theme (Google Dark theme by TabSpace)
 <pre>
 # add configuration.yaml
