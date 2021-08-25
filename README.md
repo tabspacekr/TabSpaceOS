@@ -11,6 +11,7 @@ See Release page : https://github.com/tabspacekr/TabSpaceOS/releases
 
 # Use
 Download zipped binary file, extract, write microsd card, and joy.
+압축해제 후 바이너리 파일을 win32imagewriter 등으로 sd카드에 쓴 후 오렌지파이의 microsd슬롯에 장착해주세요
 
 # Prework Code
 
