@@ -17,7 +17,7 @@ Download zipped binary file, extract, write microsd card, and joy.
 
 # Prework Code
 
-## 1. Install Armbian 21.05.2 Buster with Linux 5.10.34-sunxi
+## 1. Install Armbian 21.08.3 Buster with Linux 5.10.60-sunxi
 
 <pre>
 https://www.armbian.com/orange-pi-zero/
@@ -29,8 +29,11 @@ Armbian Login Information
 
 CPU Clock Speed Modify
 - Set mode Performance
-- Set clock 1008MHz(1008000)
+- Set clock 1200MHz(1200000)
+
+Set ZSH
 </pre>
+
 
 ## 2. OLED Support
 
