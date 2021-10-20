@@ -73,7 +73,7 @@ PW : tabspace
 ## 7. HomeAssistant Add-On Install 
 
 
-### 7-1. File Editor (5.3.1)
+### 7-1. File Editor (5.3.3)
 
 #### 7-1-1. Enable WatchDog
     
@@ -92,7 +92,7 @@ ignore_pattern:
 ssh_keys: []
 </pre>
 
-### 7-2. Zigbee2MQTT (1.19.1-1)
+### 7-2. Zigbee2MQTT (1.21.2-1)
 
 #### 7-2-1. Add Repository ( https://github.com/zigbee2mqtt/hassio-zigbee2mqtt ) and Install
 <pre>
@@ -137,7 +137,7 @@ ID : mqtt
 PW : tabspace
 </pre>
 
-### 7-4. ZeroTier One  (0.11.0)
+### 7-4. ZeroTier One  (0.11.2)
 <pre>
 ※ 참고 : ZeroTier One은 자동실행(autostart)되지 않으며, 관리효율성을 위해 사전설치되어 있습니다. 
          ZeroTier는 최초 실행 시 개인 Node ID를 부여받습니다. 향후 TabSpace B2C망을 통한 서비스시에 사용 예정입니다.
@@ -437,4 +437,16 @@ ls
 # adding smartir custom components
 # IR리모콘 사용을 손쉽게 할 수 있는 smartir 커스텀 컴포넌트 호출 ( https://github.com/smartHomeHub/SmartIR )  
 smartir:
+```
+### 8-8. Tasmota-IRHVAC Custom Components 추가
+    
+Tasmota-IRHAVC Repository : https://github.com/hristo-atanasov/Tasmota-IRHVAC
+```python
+cd /usr/share/hassio/homeassistant/custom_components/
+sudo git clone https://github.com/hristo-atanasov/Tasmota-IRHVAC.git
+cd Tasmota-IRHVAC/
+cd custom_components/
+sudo mv tasmota_irhvac ../../
+cd ../../
+sudo rm -rf Tasmota-IRHVAC/
 ```
