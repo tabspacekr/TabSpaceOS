@@ -5,7 +5,7 @@ Debian Linux기반인 Armbian을 OrangePi Zero에서
 홈오토메이션을 손쉽게 활용할 수 있는 오픈소스 IoT 플랫폼 HomeAssistant 및 각종 애드온을
 탭스페이스의 노하우로 맞춤 커스터마이징 한 운영체제(OS)입니다.
 
-HomeAssistant에서 지원OS레벨을 Debian 11 (Bullseye)로 상향됨에 따라 전면 재수정을 진행중입니다.
+HomeAssistant에서 지원OS레벨을 Debian 11 (Bullseye)로 상향됨에 따라 전면 재수정을 진행중입니다. (21년 內 v2.0 배포 예정)
 </pre>
 
 # Download
