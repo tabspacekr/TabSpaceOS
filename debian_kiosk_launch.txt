@@ -1,0 +1,39 @@
+데스크탑 gui 한글표시
+apt-get install fonts-nanum
+
+데스크탑 hdmi포트에서 gui를 띄워서 kioskmode chromium browser로 페이지 표시
+firefox도 가능한것으로 보임,
+https://ubunlog.com/ko/kiosk-mode-firefox-71-introduce-una-nueva-opcion-para-abrir-el-navegador-a-pantalla-completa/
+적용 및 테스트 완료함
+
+
+cd $HOME/.config/
+mkdir autostart
+cd autostart
+vi ha.desktop
+
+[Desktop Entry]
+Type=Application
+Exec=firefox --kiosk http://localhost:8123
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=ha
+Comment=My comment
+
+마우스 커서 숨기기
+https://www.putorius.net/how-to-hide-mouse-pointer-cursor-to.html
+반응없을시3초뒤에 커서 hide
+
+sudo apt-get install unclutter
+cd $HOME/.config/autostart
+vi cursor.desktop
+
+[Desktop Entry]
+Type=Application
+Exec=unclutter -idle 3 &
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=hide cursor
+Comment=hide cursor
